@@ -1,70 +1,74 @@
 :is(h1, h2, h3, h4, h5, h6) {
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
-    color: #ff79c6;
-  }
-  body {background-color: #282a36;}
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: #ff79c6;
+}
+body {background-color: #282a36;}
 
-  #stats {  
-    font-size: 1rem;
-    margin: 1rem;
-    color: #8be9fd;
-    font-family: "Roboto Mono", monospace;
-    text-align: right;
-    padding-right: 5%;
-    font-variant: small-caps;
-  } 
+#mainpy {
+  text-align: center;
+}
+#stats {  
+  font-size: 1rem;
+  margin: 1rem;
+  color: #8be9fd;
+  font-family: "Roboto Mono", monospace;
+  text-align: right;
+  padding-right: 5%;
+  font-variant: small-caps;
+  overflow: clip;
+} 
 
-  #home {  
-    font-size: 1rem;
-    margin: 1rem;
-    color: #8be9fd;
-    font-family: "Roboto Mono", monospace;
-    text-align: left;
-    padding-left: 5%;
-    font-variant: small-caps;
-  }
-  #mainpy {
-    text-align: center;
-  }
+#home {  
+  font-size: 1rem;
+  margin: 1rem;
+  color: #8be9fd;
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  padding-left: 5%;
+  font-variant: small-caps;
+  overflow: clip;
+  cursor: pointer;
+}
 
-  #editor {
-    background-color: #44475a;
-    border: 2px solid #ff79c6;
-    font-family: "Roboto Mono", monospace;
-    padding-left: 1.5%;
-    padding-top: 1.5%;
-    padding-right: 1.5%;
-    padding-bottom: 1.5%;
-    color: #f8f8f2;
-    border-radius: 0.2rem;
-    margin: 0 auto;
-    margin: 4rem;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-    font-size: 1.5rem;
-    overflow: auto;
-    width: auto;
-    height: auto;
-    text-align: left;
-    min-width: 30rem;
-    min-height: 30rem;
-  }
-  
-  #container {
-    margin: auto;
-    width: 20%;
-  }
-  
-  #download {
-    cursor: pointer;
-    color: #8be9fd;
-  }
-  
-  #download:hover #icon {
-    display: none;
-  }
-  
-  #download:hover:before {
-    content: "";
-  }
+
+#editor {
+  background-color: #44475a;
+  border: 2px solid #ff79c6;
+  font-family: "Roboto Mono", monospace;
+  padding-left: 1.5%;
+  padding-top: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1.5%;
+  color: #f8f8f2;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin: 4rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  overflow: auto;
+  width: auto;
+  height: auto;
+  text-align: left;
+  min-width: 30rem;
+  min-height: 30rem;
+}
+
+#container {
+  margin: auto;
+  width: 20%;
+}
+
+#download {
+  cursor: pointer;
+  color: #6ff076;
+}
+
+#download:hover #icon {
+  display: none;
+}
+
+#download:hover:before {
+  content: "";
+}

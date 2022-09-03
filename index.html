@@ -11,13 +11,17 @@
 
   <body>
     <h1><span><p colo> Simple Notepad</span></h1>
-    <div id='mainpy' style="width: 100%; overflow: hidden; float: right;">
+    <div id='mainpy' style="width: 100%; overflow: clip; float: right;">
       <div id="home" style="width: 600px; float: left;">
-        <div id="file">📁 File</div>
-        <div id="download">💾 Save</div></div>
+        <span id="myFile" style="color: #f1fa8c;" onclick="document.getElementById('getFile').click()">📁 File</span>
+        <input type='file' id="getFile" style="display:none">
+        <span id="download" style="color: #50fa7b;">💾 Save</span>
+        <span id="deleteFile" style="color: #ff5555;">❌ Delete</span>
+        <input type='file' id="delete" style="display:none">
+      </div>
       <div id="stats" style="margin-left: 620px;">
-        <div id="words">Words: 0</div>
-        <div id="characters">Characters: 0</div>
+        <span id="words">Words: 0</span> <span id="characters">Characters: 0</span>
+      </div>
     </div>
     <div id="editor" contenteditable="true"></div>
     <script src="main.js"></script>
